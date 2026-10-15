@@ -10,13 +10,18 @@
 
 class Firearm : public Weapon  {
 public:
-  void Fire() override;
+  Firearm(std::string name, int damage, float weight, int magazine_capacity, std::string caliber);
+
+  bool CanFire() const;
   void Reload();
-  bool CanFire();
+  void Fire() override;
+
+
   const std::string name() const {return name_;}
   int ammo() const {return ammo_;}
   int magazine_capacity() const {return magazine_capacity_;}
 
 protected:
-int ammo_ = 0;
-int magazine_capacity_ = 0;};
+  int magazine_capacity_ = 0;
+  int ammo_ = 0;
+  std::string caliber_;};
