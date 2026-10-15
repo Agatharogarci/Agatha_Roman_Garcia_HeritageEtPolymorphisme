@@ -8,6 +8,8 @@
 // savoir laquelle il tient.
 int main() {
   Weapon pistolet("Pistolet", 24, 1.1f, 12);
+  Weapon pistolet2("Pistolet 2", 24, 1.1f, 12);
+  Weapon pistolet3("Pistolet 3", 24, 1.1f, 12);
 
   std::println("--- STAND DE TIR ---");
   while (true) {
@@ -25,7 +27,12 @@ int main() {
       pistolet.Reload();
     } else if (choix == '1') {
       pistolet.Fire();
-    } else {
+    } else if (choix == '2') {
+      pistolet2.Fire();
+    } else if (choix == '3') {
+      pistolet3.Fire();
+    }
+    else {
       std::println("Touche inconnue.");
     }
   }

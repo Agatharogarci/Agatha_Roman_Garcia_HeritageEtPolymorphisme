@@ -9,7 +9,7 @@ class Weapon {
  public:
   Weapon(std::string name, int damage, float weight, int magazine_capacity);
 
-  void Fire();
+  virtual void Fire() = 0;
   void Reload();
   bool CanFire() const;
 
