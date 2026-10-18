@@ -5,7 +5,7 @@
 #ifndef GPR_CF_POO_06_HERITAGEETPOLYMORPHISME_MELEE_H
 #define GPR_CF_POO_06_HERITAGEETPOLYMORPHISME_MELEE_H
 
-#endif  // GPR_CF_POO_06_HERITAGEETPOLYMORPHISME_MELEE_H
+
 #include "weapon.h"
 
 class Firearm : public Weapon  {
@@ -25,3 +25,5 @@ protected:
   int magazine_capacity_ = 0;
   int ammo_ = 0;
   std::string caliber_;};
+
+#endif  // GPR_CF_POO_06_HERITAGEETPOLYMORPHISME_MELEE_H
