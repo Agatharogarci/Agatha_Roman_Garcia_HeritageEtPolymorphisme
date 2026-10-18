@@ -10,6 +10,7 @@ class Weapon {
   Weapon(std::string name, int damage, float weight);
 
   virtual void Fire() = 0;
+  virtual ~Weapon() = default;
   //void Reload();
   //bool CanFire() const;
 

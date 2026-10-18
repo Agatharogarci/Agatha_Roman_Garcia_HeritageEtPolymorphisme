@@ -6,5 +6,7 @@ add_executable(01_une_seule_arme
         src/semi_automatic.cpp
         include/semi_automatic.h
         include/FullAuto.h
-        src/FullAuto.cpp)
+        src/FullAuto.cpp
+        include/Melee.h
+        src/Melee.cpp)
 target_include_directories(01_une_seule_arme PRIVATE include)
