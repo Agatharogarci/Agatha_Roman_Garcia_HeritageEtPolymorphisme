@@ -13,7 +13,7 @@ void FullAuto::Fire_FullAuto() {
       return;
     }
     ammo_ -= burstLength_;
-    std::println("{} : 4 tirs , {} degats. ({}/{})", name_, damage_, ammo_, magazine_capacity_);
+    std::println("{} : {} tirs , {} degats. ({}/{})", name_, burstLength_, damage_, ammo_, magazine_capacity_);
 }
 void FullAuto::Fire() {
   Fire_FullAuto();
