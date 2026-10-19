@@ -12,7 +12,7 @@ void FullAuto::Fire_FullAuto() {
       std::println("{} : chargeur vide.", name_);
       return;
     }
-    ammo_ -= 4;
+    ammo_ -= burstLength_;
     std::println("{} : 4 tirs , {} degats. ({}/{})", name_, damage_, ammo_, magazine_capacity_);
 }
 void FullAuto::Fire() {
